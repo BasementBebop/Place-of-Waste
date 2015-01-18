@@ -1,16 +1,20 @@
-<form class="login_form" action="to_home" method="post" name="login_form">
+<form class="login_form" action="add_user" method="post" name="login_form">
 	<ul>
 		<li>
 			<h2>Login:</h2>
-			<span class="required_notification">* Required Field</span>
 		</li>
 		<li>
 			<label for="user_name">Username:</label>
-			<input type="text" name="user_name" />
+			<input type="text" name="user_name" placeholder= "e.g. Slapnuts"/>
+			<span class="form-hint">It's super important</span>
 		</li>
 		<li>
 			<label for="user_password">Password:</label>
-			<input type="text" name="user_password" />
+			<input type="text" name="user_password" placeholder= "e.g. icecream55" />
+			<span class="form-hint">'Password1' is not acceptable</span>
+		</li>
+		<li>
+			<button class="submit" type="submit">Proceed</button>
 		</li>
 	</ul>
 </form>
